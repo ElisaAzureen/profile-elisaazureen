@@ -1,4 +1,3 @@
-// app/page.tsx
 'use client';
 
 import { Mail, Phone, MapPin, Calendar, Download, Briefcase, GraduationCap, Code2, Brain, User, FolderGit2 } from 'lucide-react';
@@ -13,8 +12,8 @@ export default function Home() {
   const projectsRef = useRef<HTMLElement>(null);
   const educationRef = useRef<HTMLElement>(null);
 
-  // Smooth scroll function
-  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
+  // Smooth scroll function - FIXED TYPE
+  const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
@@ -26,7 +25,7 @@ export default function Home() {
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
           <div className="md:flex">
             {/* Sidebar */}
-            <div className="md:w-1/3 bg-gradient-to-br from-blue-600 to-purple-700 dark:from-blue-700 dark:to-purple-800 p-8 text-white">
+            <div className="md:w-1/3 bg-linear-to-br from-blue-600 to-purple-700 dark:from-blue-700 dark:to-purple-800 p-8 text-white">
               <div className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 overflow-hidden">
                   <span className="text-6xl">👩‍💻</span>
@@ -61,7 +60,7 @@ export default function Home() {
                   <a href="#" className="hover:bg-white/20 p-2 rounded-full transition-colors">
                     <SiGithub size={20} />
                   </a>
-                  <a href="#" className="hover:bg-white/20 p-2 rounded-full transition-colors">
+                  <a href="https://linkedin.com/in/elisa-azureen" target="_blank" rel="noopener noreferrer" className="hover:bg-white/20 p-2 rounded-full transition-colors">
                     <SiLinkerd size={20} />
                   </a>
                   <a href="#" className="hover:bg-white/20 p-2 rounded-full transition-colors">
@@ -117,6 +116,7 @@ export default function Home() {
                 </button>
               </div>
 
+              {/* Rest of your content remains exactly the same... */}
               {/* About Me Section */}
               <section ref={aboutRef} className="mb-12 scroll-mt-20">
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
