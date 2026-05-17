@@ -124,7 +124,7 @@ export default function Home() {
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   Computer Science (Hons.) graduate in Netcentric Computing with experience in AI applications, 
-                  NLP systems, and backend development. Skilled in Python, Flask, Laravel, and SQL, with expertise 
+                  NLP systems, and backend development. Skilled in Python, Flask, Laravel, Next.Js and SQL, with expertise 
                   in model deployment, voice/text integration, and database management. Strong problem-solving and 
                   analytical skills, motivated to develop practical AI and software solutions.
                 </p>
@@ -143,6 +143,7 @@ export default function Home() {
                     <ul className="text-gray-600 dark:text-gray-300 text-sm list-disc list-inside space-y-1">
                       <li>Built a predictive analysis application that predicts employees future records</li>
                       <li>Developing AI-powered solutions for cloud-based systems</li>
+                      <li>Developing progressing web application for Human Resource Management System with OCR technology</li>
                     </ul>
                   </div>
 
